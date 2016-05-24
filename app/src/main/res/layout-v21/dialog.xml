@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+        <AutoCompleteTextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:cursorVisible="true"
+            android:inputType="textAutoCorrect"
+            android:backgroundTint="@android:color/black" />
+
+    </android.support.design.widget.TextInputLayout>
+</FrameLayout>
